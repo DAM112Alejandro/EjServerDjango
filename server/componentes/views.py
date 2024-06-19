@@ -1,15 +1,14 @@
 from rest_framework.views import APIView
-from models import Piloto,Equipo
-from serializers import PilotoSerializer , EquipoSerializer
+from componentes.models import Piloto,Equipo
+from componentes.serializers import PilotoSerializer , EquipoSerializer
 from rest_framework.response import Response
-from rest_framework.status import Status
 from rest_framework import generics
 
 
 ##Generica de pilotos
 class PilotoListCreate(generics.ListCreateAPIView):
-    queryset = Piloto.objects.all()
-    serializer_class = PilotoSerializer
+   queryset = Piloto.objects.all()
+   serializer_class = PilotoSerializer
 
         
 class PilotoRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
@@ -27,8 +26,7 @@ class PilotosConMasVictorias(generics.ListAPIView):
     serializer_class = PilotoSerializer
     
     def get_queryset(self):
-        victorias=self.kwargs['victorias']
-        return Piloto.objects.filter(victorias=victorias).order_by('-victorias') #De mayor a menor
+        return Piloto.objects.order_by('-victoria') #De mayor a menor
     
 #genericas de equipos
 class EquipoListCreate(generics.ListCreateAPIView):
@@ -55,8 +53,8 @@ class EquipoByMotor(generics.ListAPIView):
     
 
 class PilotoByEquipo(APIView):
-    def pilotosByEquipo(request, id_Equipo):
+   def get(self, request,id_Equipo):
         equipo = Equipo.objects.get(id=id_Equipo)
-        pilotos = equipo.pilotos.all()
+        pilotos = Piloto.objects.filter(equipo=equipo)
         serializer = PilotoSerializer(pilotos, many=True)
         return Response(serializer.data)

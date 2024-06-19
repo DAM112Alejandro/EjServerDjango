@@ -1,0 +1,354 @@
+[
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": [
+                "admin",
+                "logentry"
+            ],
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": [
+                "admin",
+                "logentry"
+            ],
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": [
+                "admin",
+                "logentry"
+            ],
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": [
+                "admin",
+                "logentry"
+            ],
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add permission",
+            "content_type": [
+                "auth",
+                "permission"
+            ],
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change permission",
+            "content_type": [
+                "auth",
+                "permission"
+            ],
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": [
+                "auth",
+                "permission"
+            ],
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view permission",
+            "content_type": [
+                "auth",
+                "permission"
+            ],
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add group",
+            "content_type": [
+                "auth",
+                "group"
+            ],
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change group",
+            "content_type": [
+                "auth",
+                "group"
+            ],
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete group",
+            "content_type": [
+                "auth",
+                "group"
+            ],
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view group",
+            "content_type": [
+                "auth",
+                "group"
+            ],
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add user",
+            "content_type": [
+                "auth",
+                "user"
+            ],
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change user",
+            "content_type": [
+                "auth",
+                "user"
+            ],
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete user",
+            "content_type": [
+                "auth",
+                "user"
+            ],
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view user",
+            "content_type": [
+                "auth",
+                "user"
+            ],
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add content type",
+            "content_type": [
+                "contenttypes",
+                "contenttype"
+            ],
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change content type",
+            "content_type": [
+                "contenttypes",
+                "contenttype"
+            ],
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": [
+                "contenttypes",
+                "contenttype"
+            ],
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view content type",
+            "content_type": [
+                "contenttypes",
+                "contenttype"
+            ],
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add session",
+            "content_type": [
+                "sessions",
+                "session"
+            ],
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change session",
+            "content_type": [
+                "sessions",
+                "session"
+            ],
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete session",
+            "content_type": [
+                "sessions",
+                "session"
+            ],
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view session",
+            "content_type": [
+                "sessions",
+                "session"
+            ],
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add equipo",
+            "content_type": [
+                "componentes",
+                "equipo"
+            ],
+            "codename": "add_equipo"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change equipo",
+            "content_type": [
+                "componentes",
+                "equipo"
+            ],
+            "codename": "change_equipo"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete equipo",
+            "content_type": [
+                "componentes",
+                "equipo"
+            ],
+            "codename": "delete_equipo"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view equipo",
+            "content_type": [
+                "componentes",
+                "equipo"
+            ],
+            "codename": "view_equipo"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add piloto",
+            "content_type": [
+                "componentes",
+                "piloto"
+            ],
+            "codename": "add_piloto"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change piloto",
+            "content_type": [
+                "componentes",
+                "piloto"
+            ],
+            "codename": "change_piloto"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete piloto",
+            "content_type": [
+                "componentes",
+                "piloto"
+            ],
+            "codename": "delete_piloto"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view piloto",
+            "content_type": [
+                "componentes",
+                "piloto"
+            ],
+            "codename": "view_piloto"
+        }
+    }
+]

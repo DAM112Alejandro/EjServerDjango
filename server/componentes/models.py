@@ -14,7 +14,7 @@ class Piloto(models.Model):
         return self.nombre
     
 class Equipo(models.Model):
-    piloto = models.ForeignKey(Piloto, on_delete='CASCADE')
+    piloto = models.ForeignKey(Piloto, on_delete=models.CASCADE)
     nombre = models.CharField(max_length=100)
     motor = models.CharField(max_length=100)
     

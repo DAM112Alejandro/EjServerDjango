@@ -1,15 +1,15 @@
 from rest_framework import serializers
-from models import Piloto , Equipo
+from componentes.models import Piloto , Equipo
 
 class PilotoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Piloto
-        field = ['id','nombre','ingeniero','victoria','años','numero']
+        fields = '__all__'
 
 class EquipoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Equipo
-        field = ['id','piloto','nombre','motor']
+        fields= '__all__'
         
 
          
